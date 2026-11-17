@@ -1,0 +1,8 @@
+PORTFÓLIO IncorpFlow
+=====================
+1. Edite SOMENTE o arquivo dados.js (textos em amarelo no site = "[PREENCHER]").
+2. Coloque prints em assets/ e o PDF do relatório (opcional) em assets/relatorio.pdf.
+3. Abra index.html no navegador para conferir.
+4. Publicar no GitHub Pages: crie um repositório, envie estes arquivos na raiz,
+   Settings > Pages > Deploy from branch (main / root).
+5. Links de diagramas, vídeo e PDF devem estar PÚBLICOS (qualquer pessoa com o link).

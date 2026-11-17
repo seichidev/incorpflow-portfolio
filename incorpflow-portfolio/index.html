@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IncorpFlow — Portfólio do Projeto de Estágio</title>
+  <meta name="description" content="Portfólio do projeto de estágio IncorpFlow: sobre o projeto, casos de uso, cronograma, documentação, telas, vídeo e relatório.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Aplica o tema antes de renderizar para evitar "flash" claro/escuro
+    (function () {
+      var dark = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches;
+      try { var s = localStorage.getItem("tema"); if (s) dark = s === "dark"; } catch (e) {}
+      if (dark) document.documentElement.classList.add("dark");
+      try { if (localStorage.getItem("menu") === "recolhido") document.documentElement.classList.add("sb-collapsed"); } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
+    <a class="sb-brand" href="#inicio">
+      <span class="logo" aria-hidden="true">iF</span>
+      <span>Incorp<b>Flow</b></span>
+    </a>
+    <nav id="nav"></nav>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Recolher menu" aria-expanded="true"></button>
+      <ol class="crumbs" aria-label="Você está em">
+        <li>IncorpFlow</li>
+        <li class="sep" aria-hidden="true"></li>
+        <li id="crumbAtual">Início</li>
+      </ol>
+      <span class="spacer"></span>
+      <button class="icon-btn" id="themeBtn" aria-label="Alternar tema claro/escuro"></button>
+    </header>
+
+    <main class="content" id="content"></main>
+
+    <footer class="footer" id="footer"></footer>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizar tela">
+    <button class="icon-btn lb-close" id="lbClose" aria-label="Fechar"></button>
+    <figure>
+      <img id="lbImg" alt="">
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+  </div>
+
+  <script src="dados.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
