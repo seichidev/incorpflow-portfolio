@@ -140,7 +140,7 @@ window.PORTFOLIO = {
   /* -------------------------------------------- 7. IDENTIFICAÇÃO DO ALUNO */
   aluno: {
     nome: "Victor Kendi Goya e Gabriel Seichi Baptista",
-    matricula: "242041002 (Victor Kendi Goya)",
+    matricula: "242041002 (Victor Kendi Goya) e 242041013 (Gabriel Seichi Baptista)",
     orientador: "Marcelo Yamamoto e Renata Porto Gransoti",
     instituicao: "UniFil",
     ano: "2026",
